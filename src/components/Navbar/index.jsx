@@ -24,13 +24,19 @@ function Navbar() {
               <a href="">Stats</a>
               <a href="">FAQ</a>
               <a href="">Contact</a>
+              <a className={`${styles["log-in"]} ${styles.mobile}`} href="">
+                Log in
+              </a>
+              <a className={`${styles["sign-up"]} ${styles.mobile}`} href="">
+                Sign Up
+              </a>
             </div>
           </div>
           <div className={styles["right-side"]}>
-            <a className={styles["login-in"]} href="">
-              Login
+            <a className={`${styles["log-in"]} ${styles.desktop}`} href="">
+              Log in
             </a>
-            <a className={styles["sign-up"]} href="">
+            <a className={`${styles["sign-up"]} ${styles.desktop}`} href="">
               Sign Up
             </a>
             <BurgerMenu
