@@ -1,0 +1,74 @@
+@import "../../../styles/partials/_theme.scss";
+@import "../../../styles/partials/_breakpoints.scss";
+
+.burger-menu-container {
+  background-color: $app-yellow;
+  display: none;
+  position: relative;
+  margin: 0 -10px 0 12px;
+  width: 44px;
+  height: 44px;
+  z-index: 4;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.35s;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.35s;
+  }
+
+  &::after {
+    transform: translateY(4px);
+  }
+
+  &::before {
+    transform: translateY(-4px);
+  }
+
+  &.active {
+    &::after {
+      transform: rotate(45deg) scale(1);
+    }
+
+    &::before {
+      transform: rotate(-45deg) scale(1);
+    }
+
+    animation: bounceAnimation 0.3s ease-in-out forwards;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+@keyframes bounceAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(1px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-1px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
