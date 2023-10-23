@@ -2,6 +2,13 @@
 @import "./partials/breakpoints";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "Casper";
+  src: url("../assets/Casper.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,16 +33,56 @@ body,
 #app {
   height: 100%;
   width: 100%;
-  overflow: hidden;
-}
-
-.container-limit {
-  max-width: $container-limit;
-  margin: 0 auto !important;
-  padding: 0 30px;
 }
 
 a {
   color: $main-text-color;
   cursor: pointer;
+}
+
+.container-limit {
+  max-width: $container-limit;
+  margin: 0 auto !important;
+}
+
+.section {
+  padding: 0 calc(8% + 15px);
+  overflow: hidden;
+}
+
+.button {
+  background: $app-yellow;
+  padding: 14px 22px;
+  border-radius: 3px;
+  color: $main-text-color !important;
+  display: inline-block;
+  font-weight: 600;
+
+  transition: 0.35s !important;
+  box-shadow: 0 0 0 1px #ffffff0d, 0 4px 6px #0000001a, 0 1px 10px #0000001a;
+}
+
+.button-hover {
+  background: $btn-bg-paddding-color;
+  padding: 14px 22px;
+  border-radius: 3px;
+  color: $main-text-color !important;
+  display: inline-block;
+  font-weight: 600;
+
+  transition: 0.35s !important;
+  box-shadow: 0 0 0 1px #ffffff0d, 0 4px 6px #0000001a, 0 1px 10px #0000001a;
+
+  &:hover {
+    background: $app-yellow !important;
+    color: $main-text-color !important;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
