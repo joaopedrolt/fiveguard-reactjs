@@ -23,6 +23,8 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2%;
+        position: relative;
+        z-index: 11;
 
         .item-box {
           /* height: fit-content; */
@@ -61,17 +63,16 @@
     }
   }
 
-  .grid-relative {
+  .grid-background {
     position: absolute;
-    height: 100% !important;
+    mask-image: linear-gradient(to bottom, transparent, black);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+    background: url("../../assets/grid.svg") repeat bottom;
     width: 100% !important;
+    height: 255px;
+    position: absolute;
     bottom: 0;
     left: 0;
-
-    .grid {
-      mask-image: linear-gradient(to bottom, transparent, black);
-      -webkit-mask-image: linear-gradient(to bottom, transparent, black);
-      background: url('../../assets/grid.svg') repeat bottom;
-    }
+    opacity: .8;
   }
 }

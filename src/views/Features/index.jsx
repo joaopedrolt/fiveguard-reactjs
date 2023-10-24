@@ -1,4 +1,5 @@
 import styles from "./Features.module.scss";
+
 function Features() {
   return (
     <>
@@ -43,9 +44,7 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className={styles["grid-relative"]}>
-          <div className={styles.grid}></div>
-        </div>
+        <div className={styles["grid-background"]}></div>
       </section>
     </>
   );

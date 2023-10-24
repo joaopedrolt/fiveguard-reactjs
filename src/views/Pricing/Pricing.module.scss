@@ -1,6 +1,80 @@
 @import "../../styles/partials/_breakpoints.scss";
 @import "../../styles/partials/_theme.scss";
 
-.app-header {
-  
+.pricing {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  position: relative;
+  background: url("../../assets/background.jpg") no-repeat 50% / cover;
+
+  .pricing-container {
+    position: relative;
+    z-index: 3;
+    padding-left: 20px;
+
+    .pricing-content {
+      .pricing-title {
+        text-align: center;
+        font-size: 51.98px;
+        margin-bottom: 40px !important;
+
+        font-family: "Casper", Poppins, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Helvetica, Arial, sans-serif;
+      }
+
+      .pricing-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        position: relative;
+        z-index: 11;
+
+        .item-box {
+          /* height: fit-content; */
+          text-align: center;
+          border-radius: 6px !important;
+          flex: 1;
+          background-color: $app-light-bg-color;
+          padding: 30px !important;
+          margin-bottom: 2% !important;
+          min-width: 320px;
+
+          .item-icon {
+            margin-bottom: 8px !important;
+            color: $app-yellow;
+
+            span {
+              font-size: 34px;
+            }
+          }
+
+          .item-title {
+            font-size: 20px;
+            margin-bottom: 7px !important;
+          }
+
+          .item-desc {
+            font-size: 16px;
+            color: $main-text-hover-color;
+          }
+
+          @media (max-width: $mobile-small) {
+            min-width: auto !important;
+          }
+        }
+      }
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 28, 68, 0.54)
+      linear-gradient(transparent 0, rgba(0, 0, 0, 0.53) 30%, #121b2d 100%);
+    z-index: 2;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+  }
 }
