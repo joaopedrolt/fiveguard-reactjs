@@ -1,45 +1,60 @@
 import styles from "./Pricing.module.scss";
 
-function Pricing() {
+function Pricing({setShowModal}) {
+  const showModal = () => setShowModal(true);
+
   return (
     <>
       <section id="pricing" className={`section ${styles.pricing}`}>
         <div className={`${styles["pricing-container"]} container-limit`}>
           <div className={styles["pricing-content"]}>
-            <h2 className={styles["pricing-title"]}>Pricing</h2>
+            <h2 className={styles["pricing-title"]}>Preços</h2>
             <div className={styles["pricing-items"]}>
               <div className={styles["item-box"]}>
-                <div className={styles["item-icon"]}>
-                  <span className="material-symbols-outlined">task_alt</span>
+                <div className={styles["item-img"]}>
+                  <div className={styles["item-img"]}>
+                    <img src="./fivesharp_box_mensal.png" alt="" />
+                  </div>
                 </div>
-                <h6 className={styles["item-title"]}>Facil de Usar</h6>
-                <div className={styles["item-desc"]}>
-                  O nosso produto foi criado com simplicidade em mente, visando
-                  ser fácil de compreender e utilizar. Além disso, ele oferece
-                  uma ampla gama de opções para atender às necessidades dos
-                  usuários.
-                </div>
+                <div className={styles["item-title"]}>Mensal</div>
+                <div className={styles["item-desc"]}>R$: 74,90</div>
+                <button
+                  className={"button small"}
+                  style={{
+                    margin: "10px 0",
+                    width: "100%",
+                  }}
+                  onClick={showModal}
+                >
+                  Comprar
+                </button>
               </div>
+
               <div className={styles["item-box"]}>
-                <div className={styles["item-icon"]}>
-                  <span className="material-symbols-outlined">mail</span>
+                <div className={styles["item-img"]}>
+                  <img src="./fivesharp_box_trimestral.png" alt="" />
                 </div>
-                <h6 className={styles["item-title"]}>Entrega Instantânea</h6>
-                <div className={styles["item-desc"]}>
-                  O nosso produto é disponibilizado automaticamente após a
-                  aprovação do pagamento.
-                </div>
-              </div>
-              <div className={styles["item-box"]}>
-                <div className={styles["item-icon"]}>
-                  <span className="material-symbols-outlined">lock</span>
-                </div>
-                <h6 className={styles["item-title"]}>Segurança</h6>
-                <div className={styles["item-desc"]}>
-                  Os pagamentos são processados em um ambiente altamente seguro
-                  e criptografado, garantindo a proteção das suas informações
-                  pessoais contra qualquer risco.
-                </div>
+                <div className={styles["item-title"]}>Trimestral</div>
+                <div className={styles["item-desc"]}>R$: 199,90</div>
+                <button
+                  className={"button small"}
+                  style={{
+                    margin: "10px 0",
+                    width: "100%",
+                  }}
+                  onClick={showModal}
+                >
+                  Comprar
+                </button>
+
+           {/*      <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="save-button"
+                  onClick={() => (modalOpen ? close() : open())}
+                >
+                 Comprar
+                </motion.button> */}
               </div>
             </div>
           </div>

@@ -23,6 +23,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+#root{
+  position: relative;
+}
+
 body {
   background-color: $app-bg-color;
   color: $main-text-color !important;
@@ -54,12 +58,22 @@ a {
   background: $app-yellow;
   padding: 14px 22px;
   border-radius: 3px;
-  color: $main-text-color !important;
+  color: $main-text-color;
+  cursor: pointer !important;
   display: inline-block;
   font-weight: 600;
-
   transition: 0.35s !important;
   box-shadow: 0 0 0 1px #ffffff0d, 0 4px 6px #0000001a, 0 1px 10px #0000001a;
+
+  &.small {
+    background: $app-green;
+    font-size: 13px !important;
+    padding: 8px 10px !important;
+
+    &.yellow{
+      background: $app-yellow;
+    }
+  }
 }
 
 .button-hover {
@@ -80,9 +94,5 @@ a {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }

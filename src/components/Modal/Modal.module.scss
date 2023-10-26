@@ -1,0 +1,21 @@
+@import "../../styles/partials/_theme.scss";
+
+.backdrop {
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999999;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -250px;
+  background-color: $app-light-bg-color;
+}
