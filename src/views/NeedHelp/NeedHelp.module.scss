@@ -1,6 +1,91 @@
 @import "../../styles/partials/_breakpoints.scss";
 @import "../../styles/partials/_theme.scss";
 
-.app-header {
-  
+.need-help {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  position: relative;
+  background: url("../../assets/grid-help.svg") top -1px center;
+
+  .need-help-container {
+    position: relative;
+    z-index: 3;
+    padding-left: 20px;
+
+    .need-help-content {
+      position: relative;
+      display: flex;
+      justify-content: start;
+      background-color: $app-light-bg-color;
+      border-radius: 6px !important;
+      padding: 60px !important;
+
+      .need-help-title {
+        text-align: start;
+        font-size: 62px;
+        margin-bottom: 30px !important;
+
+        font-family: "Casper", Poppins, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Helvetica, Arial, sans-serif;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 50px !important;
+        color: $main-text-hover-color;
+        max-width: 56%;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        img {
+          height: 25px;
+          width: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .img-background {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 48%;
+
+      img {
+        height: 100%;
+        width: 100%;
+
+        object-fit: contain;
+        object-position: bottom;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      .img-background {
+        display: none;
+      }
+
+      p {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 28, 68, 0.54)
+      linear-gradient(transparent 0, rgba(0, 0, 0, 0.53) 30%, #121b2d 100%);
+    z-index: 2;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+  }
 }

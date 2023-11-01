@@ -7,6 +7,8 @@ import Stats from "./views/Stats";
 import Modal from "./components/Modal";
 import { useState } from "react";
 import FAQ from "./views/FAQ";
+import NeedHelp from "./views/NeedHelp";
+import Footer from "./components/Footer";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -20,6 +22,8 @@ function App() {
       <Modal showModal={showModal} setShowModal={setShowModal}></Modal>
       <Stats></Stats>
       <FAQ></FAQ>
+      <NeedHelp></NeedHelp>
+      <Footer></Footer>
     </>
   );
 }
