@@ -33,19 +33,20 @@
     .need-help-container {
       position: relative;
       z-index: 3;
-      padding-left: 20px;
+      /*  padding-left: 20px; */
 
       .need-help-content {
         position: relative;
         display: flex;
-        justify-content: start;
+        flex-direction: column;
+        align-items: start;
         background-color: $app-light-bg-color;
         border-radius: 6px !important;
-        padding: 60px !important;
+        padding: 60px;
 
         .need-help-title {
           text-align: start;
-          font-size: 62px;
+          font-size: 3.875rem;
           margin-bottom: 30px !important;
 
           font-family: "Casper", Poppins, -apple-system, BlinkMacSystemFont,
@@ -53,7 +54,7 @@
         }
 
         p {
-          font-size: 18px;
+          font-size: 1.125rem;
           margin-bottom: 50px !important;
           color: $main-text-hover-color;
           max-width: 56%;
@@ -89,6 +90,12 @@
       }
 
       @media (max-width: $mobile) {
+        .need-help-content {
+          padding: 30px !important;
+          text-align: center !important;
+          align-items: center !important;
+        }
+
         .img-background {
           display: none;
         }

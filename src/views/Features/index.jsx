@@ -6,7 +6,7 @@ function Features() {
       <section id="features" className={`section ${styles.features}`}>
         <div className={`${styles["features-container"]} container-limit`}>
           <div className={styles["features-content"]}>
-            <h2 className={styles["features-title"]}>Features</h2>
+            <h2 className="section-title mid">Features</h2>
             <div className={styles["features-items"]}>
               <div className={styles["item-box"]}>
                 <div className={styles["item-icon"]}>

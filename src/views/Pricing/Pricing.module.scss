@@ -10,7 +10,7 @@
   .pricing-container {
     position: relative;
     z-index: 3;
-    padding-left: 20px;
+ 
 
     .pricing-content {
       .pricing-title {
@@ -27,7 +27,7 @@
         justify-content: center;
         background-color: $app-light-bg-color;
         border-radius: 6px !important;
-        padding: 40px !important;
+        padding: 40px ;
 
         .item-box {
           display: flex;
@@ -38,14 +38,13 @@
           background-color: $app-light-bg-color;
           border: 1px solid #2b3a54;
           padding: 20px !important;
-          min-width: 245px;
           margin: 10px !important;
 
           .item-img {
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 180px; 
+            max-width: 180px;
             max-height: 168px;
 
             img {
@@ -56,20 +55,23 @@
           }
 
           .item-title {
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 700;
             margin: 7px 0 !important;
           }
 
           .item-desc {
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 700;
             color: $app-yellow;
           }
 
-          .item-button {
-      
-          }
+          .item-button {}
+        }
+
+        @media (max-width: $mobile) {
+          flex-direction: column !important;
+          padding: 0;
         }
       }
     }
@@ -78,8 +80,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: rgba(0, 28, 68, 0.54)
-      linear-gradient(transparent 0, rgba(0, 0, 0, 0.53) 30%, #121b2d 100%);
+    background: rgba(0, 28, 68, 0.54) linear-gradient(transparent 0, rgba(0, 0, 0, 0.53) 30%, #121b2d 100%);
     z-index: 2;
     height: 100% !important;
     width: 100% !important;

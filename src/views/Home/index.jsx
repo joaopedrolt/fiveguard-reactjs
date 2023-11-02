@@ -6,7 +6,7 @@ function Home() {
       <section className={`section ${styles.home}`}>
         <div className={`${styles["home-container"]} container-limit`}>
           <div className={styles["home-content"]}>
-            <h2 className={styles["home-title"]}>
+            <h2 className="section-title">
             Fivesharp<br></br>O Maior do FiveM
             </h2>
             <p className={styles["home-desc"]}>

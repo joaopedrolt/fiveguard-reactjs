@@ -6,7 +6,7 @@ function FAQ() {
       <section id="faq" className={`section ${styles.faq}`}>
         <div className={`${styles["faq-container"]} container-limit`}>
           <div className={styles["faq-content"]}>
-            <h2 className={styles["faq-title"]}>Perguntas</h2>
+            <h2 className="section-title mid">Perguntas</h2>
             <div className={styles["faq-items"]}>
               <div className={styles["item-box"]}>
                 <h6 className={styles["item-title"]}>

@@ -9,8 +9,7 @@ function NeedHelp() {
         <section id="need-help" className={`section ${styles["need-help"]}`}>
           <div className={`${styles["need-help-container"]} container-limit`}>
             <div className={styles["need-help-content"]}>
-              <div className={styles["need-help-items"]}>
-                <h2 className={styles["need-help-title"]}>Precisa de Ajuda?</h2>
+                <h2 className="section-title">Precisa de Ajuda?</h2>
                 <p>
                   Feel free to contact us if you have any questions or
                   suggestions about our product. Before contacting support,
@@ -20,8 +19,6 @@ function NeedHelp() {
                   <img src="/discord.svg" />
                   Entrar no Servidor
                 </a>
-              </div>
-
               <div className={styles["img-background"]}>
                 <img src="/mens.webp" />
               </div>

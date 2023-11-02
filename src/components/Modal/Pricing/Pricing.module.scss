@@ -12,7 +12,7 @@
     align-items: center;
 
     .modal-title {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 700;
       color: $app-yellow !important;
     }
@@ -30,7 +30,7 @@
     padding: 55px;
 
     .form-input {
-      font-size: 16px;
+      font-size: 1rem;
       letter-spacing: -0.011em;
       margin-bottom: 4px;
     }
@@ -86,7 +86,7 @@
       display: flex;
       align-items: center;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 0.875rem;
       color: $main-text-hover-color;
     }
   }

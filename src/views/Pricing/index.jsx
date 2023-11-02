@@ -8,7 +8,7 @@ function Pricing({setShowModal}) {
       <section id="pricing" className={`section ${styles.pricing}`}>
         <div className={`${styles["pricing-container"]} container-limit`}>
           <div className={styles["pricing-content"]}>
-            <h2 className={styles["pricing-title"]}>Preços</h2>
+            <h2 className="section-title mid">Preços</h2>
             <div className={styles["pricing-items"]}>
               <div className={styles["item-box"]}>
                 <div className={styles["item-img"]}>
