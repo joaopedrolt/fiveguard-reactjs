@@ -9,11 +9,12 @@ const backdropVariants = {
 };
 
 const modalVariants = {
-  hidden: { opacity: 0, scale: 0.5 },
-  visible: { opacity: 1, scale: 1 },
+  hidden: { opacity: 0, scale: 0, translateX: "-50%", translateY: "-50%" },
+  visible: { opacity: 1, scale: 1, translateX: "-50%", translateY: "-50%" },
+  exit: { opacity: 0 },
 };
 
-function Modal({ showModal, setShowModal }) {
+function Modal({ showModal, setShowModal, product }) {
   const closeModal = () => {
     setShowModal(false);
   };
@@ -38,20 +39,18 @@ function Modal({ showModal, setShowModal }) {
               initial="hidden"
               animate="visible"
               transition={{
+                duration: 0.3,
                 ease: [0, 0.71, 0.2, 1.01],
                 scale: {
                   type: "spring",
-                  damping: 9,
+                  damping: 10,
                   stiffness: 100,
                   restDelta: 0.001,
                 },
               }}
-              exit="hidden"
+              exit="exit"
             >
-
-              <Pricing></Pricing>
-
-              
+              <Pricing product={product} setShowModal={setShowModal} />
             </motion.div>
           </>
         )}

@@ -1,9 +1,7 @@
-/* @import "../../styles/partials/_breakpoints.scss"; */
+@import "../../../styles/partials/_breakpoints.scss";
 @import "../../../styles/partials/_theme.scss";
 
 .modal-pricing {
-  width: 500px;
-
   .modal-header {
     background: $app-bg-color;
     display: flex;
@@ -23,11 +21,15 @@
       color: $app-yellow !important;
       width: 40px;
       height: 40px;
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   .modal-form {
-    padding: 55px;
+    padding: 27px;
 
     .form-input {
       font-size: 1rem;
@@ -46,7 +48,7 @@
 
     .modal-payment-methods {
       .payment-method {
-        width: 192px;
+        max-width: 192px;
         height: 54px;
         padding: 6px;
         border-radius: 6px !important;

@@ -1,9 +1,6 @@
-import { useState } from "react";
 import styles from "./Footer.module.scss";
 
 function Footer() {
-  const [isActive, setIsActive] = useState(false);
-
   return (
     <>
       <footer className={styles["app-footer"]}>

@@ -1,21 +1,31 @@
+import { useState } from "react";
+import Input from "../../Input";
 import styles from "./Pricing.module.scss";
 
-function Pricing() {
+function Pricing({ product, setShowModal }) {
+  const [input, setInput] = useState("");
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
-      <div className={`${styles["modal-pricing"]}`}>
+      <form className={`${styles["modal-pricing"]}`}>
         <div className={`${styles["modal-header"]}`}>
-          <div className={`${styles["modal-title"]}`}>MENSAL</div>
-          <button className={`${styles["modal-header-close"]}`} type="button">
+          <div className={`${styles["modal-title"]}`}>{product.name}</div>
+          <button className={`${styles["modal-header-close"]}`} onClick={closeModal} type="button">
             ×
           </button>
         </div>
         <div className={`${styles["modal-form"]}`}>
-          <input
-            className={`${styles["email-input"]}`}
-            placeholder="Email"
+          <Input
             type="email"
-          ></input>
+            label={"E-mail"}
+            input={input}
+            setInput={setInput}
+          />
+
           <p className={`${styles["form-input"]}`}>Payment method</p>
           <div className={`${styles["modal-payment-methods"]}`}>
             <div className={`${styles["payment-method"]}`}>
@@ -30,10 +40,10 @@ function Pricing() {
           </div>
         </div>
         <div className={`${styles["modal-footer"]}`}>
-          <div className={`${styles["modal-price"]}`}>R$: 74,90</div>
-          <div className="button small yellow">Comprar</div>
+          <div className={`${styles["modal-price"]}`}>R$: {product.price}</div>
+          <input value="Comprar" className="button small yellow" type="submit"></input>
         </div>
-      </div>
+      </form>
     </>
   );
 }

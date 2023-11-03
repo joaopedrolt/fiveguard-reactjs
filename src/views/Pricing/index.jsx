@@ -1,7 +1,31 @@
 import styles from "./Pricing.module.scss";
 
-function Pricing({setShowModal}) {
-  const showModal = () => setShowModal(true);
+function Pricing({ setShowModal, setProduct, product }) {
+  const handleBuyClick = (productName) => {
+    var productObj = { name: "", price: "" };
+
+    switch (productName) {
+      case "MENSAL":
+        productObj = {
+          name: productName,
+          price: "199,90",
+        };
+        break;
+
+      case "TRIMESTRAL":
+        productObj = {
+          name: productName,
+          price: "74,90",
+        };
+        break;
+    }
+
+    setProduct(productObj);
+    
+    setTimeout(() => {
+      setShowModal(true);
+    }, 30);
+  };
 
   return (
     <>
@@ -24,7 +48,7 @@ function Pricing({setShowModal}) {
                     margin: "10px 0",
                     width: "100%",
                   }}
-                  onClick={showModal}
+                  onClick={handleBuyClick.bind(null, "MENSAL")}
                 >
                   Comprar
                 </button>
@@ -42,19 +66,10 @@ function Pricing({setShowModal}) {
                     margin: "10px 0",
                     width: "100%",
                   }}
-                  onClick={showModal}
+                  onClick={handleBuyClick.bind(null, "TRIMESTRAL")}
                 >
                   Comprar
                 </button>
-
-           {/*      <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="save-button"
-                  onClick={() => (modalOpen ? close() : open())}
-                >
-                 Comprar
-                </motion.button> */}
               </div>
             </div>
           </div>
