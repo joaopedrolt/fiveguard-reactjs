@@ -15,7 +15,7 @@ function NeedHelp() {
                   suggestions about our product. Before contacting support,
                   please review the FAQ above.
                 </p>
-                <a href="" className="button">
+                <a target="_black" href="https://discord.com/invite/4VkPWpxCvr" className="button">
                   <img src="/discord.svg" />
                   Entrar no Servidor
                 </a>

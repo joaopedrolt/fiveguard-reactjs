@@ -1,4 +1,5 @@
 import styles from "./Footer.module.scss";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -12,7 +13,7 @@ function Footer() {
             <div className={styles["footer-copyright"]}>
               Copyright © 2023 <p>FiveSharp</p>
             </div>
-            <a className={styles["footer-terms"]}>Política de Reembolsos</a>
+            <Link to="/Reembolso" className={styles["footer-terms"]}>Política de Reembolsos</Link>
           </div>
 
           <div className={styles["right-side"]}>
