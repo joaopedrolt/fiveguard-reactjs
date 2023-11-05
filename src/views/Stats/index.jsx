@@ -14,7 +14,7 @@ function Stats() {
 
   return (
     <>
-      <section ref={ref} id="stats" className={`section ${styles.stats}`}>
+      <section id="stats" ref={ref} className={`section ${styles.stats}`}>
         <div className={`${styles["stats-container"]} container-limit`}>
           <div className={styles["stats-content"]}>
             <h2 className={styles["stats-title"]}>Estatísticas</h2>

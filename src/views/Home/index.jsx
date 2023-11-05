@@ -3,7 +3,7 @@ import styles from "./Home.module.scss";
 function Home() {
   return (
     <>
-      <section className={`section ${styles.home}`}>
+      <section id="home" className={`section ${styles.home}`}>
         <div className={`${styles["home-container"]} container-limit`}>
           <div className={styles["home-content"]}>
             <h2 className="section-title">
@@ -15,7 +15,7 @@ function Home() {
               que aprimoram a jogabilidade, e a diversão geral. O FiveSharp se
               destaca como uma escolha popular entre os entusiastas do FiveM.
             </p>
-            <a className="button">Adquirir Agora</a>
+            <a href="#pricing" className="button">Adquirir Agora</a>
           </div>
           <div className={styles["home-image"]}>
             <img src="./dashboard.png" alt="" />

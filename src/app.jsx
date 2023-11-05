@@ -1,6 +1,5 @@
 import "./styles/app.scss";
 import DefaultLayout from "./layouts/Default";
-import RefundLayout from "./layouts/Refund";
 
 import {
   BrowserRouter as Router,
@@ -9,13 +8,30 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import Main from "./pages/Main";
+import Refund from "./pages/Refund";
+
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<DefaultLayout />} />
-          <Route path="/Reembolso" element={<RefundLayout />} />
+          <Route exact path="/"
+            element={
+              <DefaultLayout>
+                <Main />
+              </DefaultLayout>
+            }>
+          </Route>
+
+          <Route path="/Reembolso"
+            element={
+              <DefaultLayout>
+                <Refund />
+              </DefaultLayout>
+            }>
+          </Route>
+
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

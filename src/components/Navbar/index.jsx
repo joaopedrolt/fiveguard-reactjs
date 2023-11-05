@@ -21,10 +21,10 @@ function Navbar() {
               }`}
             >
               <a href="#features">Features</a>
-              <a href="">Preços</a>
-              <a href="">Estatísticas</a>
-              <a href="">Perguntas</a>
-              <a href="">Contato</a>
+              <a href="#pricing">Preços</a>
+              <a href="#stats">Estatísticas</a>
+              <a href="#faq">Perguntas</a>
+              <a href="#need-help">Ajuda</a>
             </div>
             <BurgerMenu
               isActiveState={isActive}

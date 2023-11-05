@@ -3,7 +3,7 @@ import styles from "./NeedHelp.module.scss";
 function NeedHelp() {
   return (
     <>
-      <div className={styles["need-help-wrapper"]}>
+      <div id="need-help" className={styles["need-help-wrapper"]}>
         <div className={styles["fade-background"]}></div>
         <div className={styles["background"]}></div>
         <section id="need-help" className={`section ${styles["need-help"]}`}>

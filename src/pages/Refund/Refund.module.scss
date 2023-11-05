@@ -1,0 +1,20 @@
+@import "../../styles/partials/_breakpoints.scss";
+@import "../../styles/partials/_theme.scss";
+
+.refund {
+  padding-top: 160px !important;
+  padding-bottom: 90px !important;
+
+  .refund-container {
+    position: relative;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $mobile-mid) {
+    text-align: center !important;
+
+    .home-desc{
+      text-align: center !important;
+    }
+  }
+}
