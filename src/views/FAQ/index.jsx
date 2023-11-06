@@ -3,12 +3,12 @@ import styles from "./FAQ.module.scss";
 function FAQ() {
   return (
     <>
-      <section id="faq" className={`section ${styles.faq}`}>
+      <section data-aos="fade-in" id="faq" className={`section ${styles.faq}`}>
         <div className={`${styles["faq-container"]} container-limit`}>
           <div className={styles["faq-content"]}>
             <h2 className="section-title mid">Perguntas</h2>
-            <div className={styles["faq-items"]}>
-              <div className={styles["item-box"]}>
+            <div data-aos="fade-in" className={styles["faq-items"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <h6 className={styles["item-title"]}>
                   Vai funcionar no meu computador?
                 </h6>
@@ -21,7 +21,7 @@ function FAQ() {
                 </div>
               </div>
 
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <h6 className={styles["item-title"]}>Posso tomar ban?</h6>
                 <div className={styles["item-desc"]}>
                   Quando se trata de alterações em jogos online, não podemos
@@ -33,7 +33,7 @@ function FAQ() {
                 </div>
               </div>
 
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <h6 className={styles["item-title"]}>Como posso pagar?</h6>
                 <div className={styles["item-desc"]}>
                   Por enquanto, estamos disponibilizando apenas a opção de
@@ -41,7 +41,7 @@ function FAQ() {
                 </div>
               </div>
 
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <h6 className={styles["item-title"]}>Como vou receber?</h6>
                 <div className={styles["item-desc"]}>
                   Nossa prioridade absoluta é a segurança e a privacidade de
@@ -52,10 +52,6 @@ function FAQ() {
                   dúvida, não hesite em contatar nosso suporte, disponível
                   através do Discord ou via e-mail.
                 </div>
-              </div>
-
-              <div className={styles["gun-icon"]}>
-                
               </div>
             </div>
           </div>

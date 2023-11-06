@@ -8,10 +8,9 @@
   .home-container {
     position: relative;
     padding-bottom: 120px;
-/*     padding-left: 20px; */
 
     .home-content {
-    max-width: 480px;
+      max-width: 480px;
 
       .home-desc {
         margin-bottom: 40px !important;
@@ -65,7 +64,7 @@
   @media (max-width: $mobile-mid) {
     text-align: center !important;
 
-    .home-desc{
+    .home-desc {
       text-align: center !important;
     }
   }

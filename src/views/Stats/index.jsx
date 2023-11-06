@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 function Stats() {
   const usersTarget = 9934;
   const discordTarget = 23092;
-  const duration = 2;
+  const duration = 5;
 
   const [ref, inView] = useInView({
     threshold: 0.3,
@@ -17,9 +17,11 @@ function Stats() {
       <section id="stats" ref={ref} className={`section ${styles.stats}`}>
         <div className={`${styles["stats-container"]} container-limit`}>
           <div className={styles["stats-content"]}>
-            <h2 className={styles["stats-title"]}>Estatísticas</h2>
+            <h2 data-aos="fade-in" className={styles["stats-title"]}>
+              Estatísticas
+            </h2>
             <div className={styles["stats-items"]}>
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-icon"]}>
                   <img src="/customers.svg" />
                 </div>
@@ -39,7 +41,7 @@ function Stats() {
                 <div className={styles["item-desc"]}>Usuarios</div>
               </div>
 
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-icon"]}>
                   <img src="/discord.svg" />
                 </div>

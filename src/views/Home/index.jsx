@@ -3,7 +3,7 @@ import styles from "./Home.module.scss";
 function Home() {
   return (
     <>
-      <section id="home" className={`section ${styles.home}`}>
+      <section data-aos="fade-in" id="home" className={`section ${styles.home}`}>
         <div className={`${styles["home-container"]} container-limit`}>
           <div className={styles["home-content"]}>
             <h2 className="section-title">

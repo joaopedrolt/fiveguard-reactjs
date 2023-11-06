@@ -8,17 +8,21 @@ function NeedHelp() {
         <div className={styles["background"]}></div>
         <section id="need-help" className={`section ${styles["need-help"]}`}>
           <div className={`${styles["need-help-container"]} container-limit`}>
-            <div className={styles["need-help-content"]}>
-                <h2 className="section-title">Precisa de Ajuda?</h2>
-                <p>
-                  Feel free to contact us if you have any questions or
-                  suggestions about our product. Before contacting support,
-                  please review the FAQ above.
-                </p>
-                <a target="_black" href="https://discord.com/invite/4VkPWpxCvr" className="button">
-                  <img src="/discord.svg" />
-                  Entrar no Servidor
-                </a>
+            <div data-aos="fade-in" className={styles["need-help-content"]}>
+              <h2 className="section-title">Precisa de Ajuda?</h2>
+              <p>
+                Fique à vontade para entrar em contato conosco se tiver alguma
+                dúvida ou sugestão sobre nosso produto. Antes de contatar o
+                suporte, por favor, revise as perguntas frequentes acima.
+              </p>
+              <a
+                target="_black"
+                href="https://discord.com/invite/4VkPWpxCvr"
+                className="button"
+              >
+                <img src="/discord.svg" />
+                Entrar no Servidor
+              </a>
               <div className={styles["img-background"]}>
                 <img src="/mens.webp" />
               </div>

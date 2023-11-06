@@ -2,13 +2,13 @@
 @import "../../styles/partials/_theme.scss";
 
 .faq {
-  padding-top: 80px !important;
-  padding-bottom: 80px !important;
+  padding-top: 150px;
+  padding-bottom: 150px;
   position: relative;
   z-index: 33;
 
   .faq-container {
-   /*  padding-left: 20px; */
+    /*  padding-left: 20px; */
 
     .faq-content {
       .faq-title {
@@ -43,7 +43,7 @@
           .item-title {
             font-size: 1.375rem;
             color: white;
-            margin-bottom: 5px ;
+            margin-bottom: 5px;
           }
 
           .item-desc {
@@ -59,6 +59,7 @@
         &::before {
           content: "";
           position: absolute;
+          z-index: 99999999999999;
           top: 38%;
           left: 45%;
           background: url("../../assets/gun.webp");

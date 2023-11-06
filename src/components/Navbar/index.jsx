@@ -1,18 +1,25 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 import BurgerMenu from "./BurgerMenu";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
+  useEffect(() => {
+    window.onscroll = () => {
+      setIsActive(false);
+    };
+  }, []);
+
   return (
     <>
       <header className={styles["app-header"]}>
         <div className={`${styles["navbar"]} ${"container-limit"}`}>
           <div className={styles["left-side"]}>
-            <div className={styles["logo-container"]}>
+            <Link to="/" className={styles["logo-container"]}>
               <img src="./fivesharp_logo.png" alt="Logo" />
-            </div>
+            </Link>
           </div>
           <div className={styles["right-side"]}>
             <div
@@ -20,11 +27,11 @@ function Navbar() {
                 isActive ? styles.active : ""
               }`}
             >
-              <a href="#features">Features</a>
-              <a href="#pricing">Preços</a>
-              <a href="#stats">Estatísticas</a>
-              <a href="#faq">Perguntas</a>
-              <a href="#need-help">Ajuda</a>
+              <a href="/#features">Features</a>
+              <a href="/#pricing">Preços</a>
+              <a href="/#stats">Estatísticas</a>
+              <a href="/#faq">Perguntas</a>
+              <a href="/#need-help">Ajuda</a>
             </div>
             <BurgerMenu
               isActiveState={isActive}

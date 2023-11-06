@@ -21,7 +21,7 @@ function Pricing({ setShowModal, setProduct, product }) {
     }
 
     setProduct(productObj);
-    
+
     setTimeout(() => {
       setShowModal(true);
     }, 30);
@@ -30,11 +30,14 @@ function Pricing({ setShowModal, setProduct, product }) {
   return (
     <>
       <section id="pricing" className={`section ${styles.pricing}`}>
-        <div className={`${styles["pricing-container"]} container-limit`}>
+        <div
+          data-aos="fade-in"
+          className={`${styles["pricing-container"]} container-limit`}
+        >
           <div className={styles["pricing-content"]}>
             <h2 className="section-title mid">Preços</h2>
             <div className={styles["pricing-items"]}>
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-img"]}>
                   <div className={styles["item-img"]}>
                     <img src="./fivesharp_box_mensal.png" alt="" />
@@ -53,8 +56,7 @@ function Pricing({ setShowModal, setProduct, product }) {
                   Comprar
                 </button>
               </div>
-
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-img"]}>
                   <img src="./fivesharp_box_trimestral.png" alt="" />
                 </div>

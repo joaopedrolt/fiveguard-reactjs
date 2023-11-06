@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.scss";
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -7,22 +7,24 @@ function Footer() {
       <footer className={styles["app-footer"]}>
         <div className={`${styles["footer"]} ${"container-limit"}`}>
           <div className={styles["left-side"]}>
-            <div className={styles["logo-container"]}>
+            <Link to="/" className={styles["logo-container"]}>
               <img src="/fivesharp_logo.png"></img>
-            </div>
+            </Link>
             <div className={styles["footer-copyright"]}>
               Copyright © 2023 <p>FiveSharp</p>
             </div>
-            <Link to="/Reembolso" className={styles["footer-terms"]}>Política de Reembolsos</Link>
+            <Link to="/Reembolso" className={styles["footer-terms"]}>
+              Política de Reembolsos
+            </Link>
           </div>
 
           <div className={styles["right-side"]}>
             <h3>Contato</h3>
             <div className={styles["contact"]}>
-              <a>
+              <a target="_black" href="https://discord.com/invite/4VkPWpxCvr">
                 <p>Discord:</p> fivesharp
               </a>
-              <a>
+              <a href="mailto:suporte@felipe-menu.xyz">
                 <p>Email:</p> suporte@felipe-menu.xyz
               </a>
               <a>

@@ -2,12 +2,12 @@
 @import "../../styles/partials/_theme.scss";
 
 .features {
-  padding-top: 80px !important;
-  padding-bottom: 80px !important;
+  padding-top: 150px;
+  padding-bottom: 150px;
   position: relative;
 
   .features-container {
-  /*   padding-left: 20px; */
+    /*   padding-left: 20px; */
 
     .features-content {
       .features-title {
@@ -73,6 +73,6 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: .8;
+    opacity: 0.8;
   }
 }

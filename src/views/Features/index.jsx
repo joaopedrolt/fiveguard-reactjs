@@ -3,12 +3,16 @@ import styles from "./Features.module.scss";
 function Features() {
   return (
     <>
-      <section id="features" className={`section ${styles.features}`}>
+      <section
+        id="features"
+        className={`section ${styles.features}`}
+        data-aos="fade-in"
+      >
         <div className={`${styles["features-container"]} container-limit`}>
           <div className={styles["features-content"]}>
             <h2 className="section-title mid">Features</h2>
             <div className={styles["features-items"]}>
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-icon"]}>
                   <span className="material-symbols-outlined">task_alt</span>
                 </div>
@@ -20,7 +24,7 @@ function Features() {
                   usuários.
                 </div>
               </div>
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-icon"]}>
                   <span className="material-symbols-outlined">mail</span>
                 </div>
@@ -30,7 +34,7 @@ function Features() {
                   aprovação do pagamento.
                 </div>
               </div>
-              <div className={styles["item-box"]}>
+              <div data-aos="fade-in" className={styles["item-box"]}>
                 <div className={styles["item-icon"]}>
                   <span className="material-symbols-outlined">lock</span>
                 </div>
