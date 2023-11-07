@@ -21,7 +21,7 @@ function Footer() {
           <div className={styles["right-side"]}>
             <h3>Contato</h3>
             <div className={styles["contact"]}>
-              <a target="_black" href="https://discord.com/invite/4VkPWpxCvr">
+              <a target="_black" href="https://discord.gg/55pRzdbmkH">
                 <p>Discord:</p> fivesharp
               </a>
               <a href="mailto:suporte@felipe-menu.xyz">

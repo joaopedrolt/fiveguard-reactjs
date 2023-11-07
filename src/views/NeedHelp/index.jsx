@@ -17,7 +17,7 @@ function NeedHelp() {
               </p>
               <a
                 target="_black"
-                href="https://discord.com/invite/4VkPWpxCvr"
+                href="https://discord.gg/55pRzdbmkH"
                 className="button"
               >
                 <img src="/discord.svg" />
