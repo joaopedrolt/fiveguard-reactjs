@@ -29,7 +29,7 @@ function Refund() {
           </ul>
           <h3>Precisa de ajuda?</h3>
           <p className={styles["refund-email"]}>
-            Contate-nos por e-mail: <a href=""><b>suporte@felipe-menu.xyz</b></a>
+            Contate-nos por e-mail: <a target="_blank" href="mailto:suporte@felipe-menu.xyz"><b>suporte@felipe-menu.xyz</b></a>
           </p>
         </div>
       </section>
