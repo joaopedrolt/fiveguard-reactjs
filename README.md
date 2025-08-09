@@ -25,4 +25,4 @@ Este projeto é um site simples desenvolvido em React utilizando Vite, com o obj
 - Discord: [https://discord.gg/55pRzdbmkH](https://discord.gg/55pRzdbmkH)
 
 ---
-Copyright ©
+Copyright © 2023 FiveSharp
