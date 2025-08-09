@@ -2,7 +2,7 @@
 
 Este projeto é um site simples desenvolvido em React utilizando Vite, com o objetivo de apresentar o produto FiveSharp para a comunidade de FiveM.
 
-<h4><a href="https://furvana-ecommerce.vercel.app/">Você pode acessar esse projeto clicando aqui</a></h3>
+<h4><a href="https://fiveguard-reactjs.vercel.app/">Você pode acessar esse projeto clicando aqui</a></h3>
 
 ## Principais funcionalidades
 
