@@ -1,8 +1,28 @@
-# React + Vite
+<h2 align="center">FiveSharp</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um site simples desenvolvido em React utilizando Vite, com o objetivo de apresentar o produto FiveSharp para a comunidade de FiveM.
 
-Currently, two official plugins are available:
+## Principais funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Página principal com informações sobre o produto
+- Seção de features, preços, estatísticas e perguntas frequentes
+- Modal para compra via Pix
+- Layout responsivo e moderno
+
+## Como executar
+
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm run dev
+   ```
+
+## Contato
+
+- Discord: [https://discord.gg/55pRzdbmkH](https://discord.gg/55pRzdbmkH)
+
+---
+Copyright ©
